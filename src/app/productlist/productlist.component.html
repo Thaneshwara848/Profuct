@@ -1,0 +1,34 @@
+<p>productlist works!</p> 
+{{5+5}}
+ 
+<div class="container">
+     <h2>Product List </h2>
+    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+    <table class="table table-striped">
+      <thead>
+        <tr >
+          <th>Product Id</th>
+          <th>Product Name</th>
+          <th>product Price </th>
+          <th>Product Description </th>
+          <th>Action </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of  _productlist">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.desc}}</td>
+          <td>
+            <!-- <button type="button" class="btn btn-primary" >EDIT</button>
+            <button type="button" class="btn btn-info" >VIEW </button>
+            <button type="button" class="btn btn-danger" >DELETE</button> -->
+          </td>
+        </tr>
+       
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-success" >Add new Product </button>
+  </div>
+  

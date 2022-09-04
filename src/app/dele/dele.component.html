@@ -1,0 +1,14 @@
+<p>dele works!</p>
+
+<div>
+<form #adduser="ngForm" >
+  
+<div class="form-group">
+    <label for="id"> Enter ID to Delete   : </label>
+    <input type="text" class="form-control" id="id" required [(ngModel)]="product.id" name="id" #uid>
+  </div>
+
+
+  <button type="button" class="btn btn-success" (click)="deleteuser(uid.value)">Delete </button>
+</form>
+</div>
